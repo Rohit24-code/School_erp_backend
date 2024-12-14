@@ -5,17 +5,19 @@
   "main": "src/server.js",
   "scripts": {
     "dist": "npx tsc",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "dev": "cross-env NODE_ENV=development nodemon src/server.ts",
     "start": "cross-env NODE_ENV=production node dist/server.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format:check" : "prettier . --check",
+    "format:fix" : "prettier . --fix"
   },
   "author": "Rohit kumar singh",
   "license": "ISC",
   "lint-staged": {
     "*.ts": [
-      "npm run lint:fix"
+      "npm run format:fix"
     ]
   },
   "devDependencies": {
