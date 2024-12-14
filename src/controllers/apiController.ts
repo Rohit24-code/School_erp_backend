@@ -1,10 +1,13 @@
-import { Request, RequestHandler, Response } from 'express'
+import { NextFunction, Request, RequestHandler, Response } from 'express'
+import httpResponse from '../util/httpResponse'
+import responseMessage from '../constant/responseMessage'
+import httpError from '../util/httpError'
 
-const self: RequestHandler = (_: Request, res: Response) => {
+const self: RequestHandler = (req: Request, res: Response, next: NextFunction) => {
     try {
-        res.sendStatus(200)
-    } catch (error) {
-        res.sendStatus(500)
+        httpResponse(req, res, 200, responseMessage.SUCCESS, [])
+    } catch (err) {
+        httpError(next, err, req, 500)
     }
 }
 
