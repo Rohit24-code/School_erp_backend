@@ -73,3 +73,18 @@ import \* as sourceMapSupport from 'source-map-support'
 
 //linking trace support
 sourceMapSupport.install()
+
+<!-- COLORFUL TERMINAL  -->
+
+npm i colorette
+now let to logger file
+
+const customMeta = util.inspect(meta, {
+showHidden: false,
+depth: null,
+colors: true
+})
+
+    added colors true in  utils and the just yourCOlor(message)
+
+<!-- DB -->

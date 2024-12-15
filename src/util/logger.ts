@@ -5,6 +5,7 @@ import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
 import path from 'path'
 import * as sourceMapSupport from 'source-map-support'
+import { blue, green, magenta, red, yellow } from 'colorette'
 
 //linking trace support
 sourceMapSupport.install()
@@ -12,28 +13,43 @@ sourceMapSupport.install()
 const consoleLogFormat = format.printf((info) => {
     const { level, message, timeStamp, meta = {} } = info
 
-    const customLabel = typeof level === 'string' ? level.toUpperCase() : 'UNKNOWN_LABEL'
-    const customTimeStamp = timeStamp
+    const customLabel = typeof level === 'string' ? colorizeLabel(level.toUpperCase()) : 'UNKNOWN_LABEL'
+    const customTimeStamp = green(timeStamp as string)
     const customMessage = message
     const customMeta = util.inspect(meta, {
         showHidden: false,
-        depth: null
+        depth: null,
+        colors: true
     })
 
     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    const customLog = `${customLabel} [${customTimeStamp}] ${customMessage}\n${'META'} ${customMeta}\n`
+    const customLog = `${customLabel} [${customTimeStamp}] ${customMessage}\n${magenta('META')} ${customMeta}\n`
 
     return customLog
 })
 
 const consoleTransport = (): Array<ConsoleTransportInstance> => {
-    if (config.ENV === EApplicationEnviroment.DEVELOPMENT) return []
+    if (config.ENV === EApplicationEnviroment.PRODUCTION) return []
     return [
         new transports.Console({
             level: 'info',
             format: format.combine(format.timestamp(), consoleLogFormat)
         })
     ]
+}
+
+const colorizeLabel = (label: string) => {
+    switch (label) {
+        case 'ERROR':
+            return red(label)
+        case 'INFO':
+            return blue(label)
+        case 'WARN':
+            return yellow(label)
+
+        default:
+            return label
+    }
 }
 
 const fileLogFormat = format.printf((info) => {
