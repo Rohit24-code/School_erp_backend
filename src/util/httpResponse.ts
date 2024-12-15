@@ -2,6 +2,7 @@ import { Request, Response } from 'express'
 import { ThttpsResponse } from '../types/types'
 import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
+import logger from './logger'
 
 export default (req: Request, _: Response, resStatusCode: number, resMessage: string, data?: unknown, count?: number) => {
     const response: ThttpsResponse = {
@@ -18,8 +19,8 @@ export default (req: Request, _: Response, resStatusCode: number, resMessage: st
     }
 
     //LOG
-    // eslint-disable-next-line no-console
-    console.info('CONTROLLER_RESPONSE', {
+
+    logger.info('CONTROLLER_RESPONSE', {
         meta: response
     })
 

@@ -1,5 +1,6 @@
 import app from './app'
 import config from './config/config'
+import logger from './util/logger'
 
 const server = app.listen(config.PORT)
 
@@ -8,21 +9,18 @@ const server = app.listen(config.PORT)
     try {
         //database connection
 
-        // eslint-disable-next-line no-console
-        console.info(`application started`, {
+        logger.info(`application started`, {
             meta: {
                 PORT: config.PORT,
                 SERVER: config.SERVER_URL
             }
         })
     } catch (err) {
-        // eslint-disable-next-line no-console
-        console.error('APPLICATION ERROR', { meta: err })
+        logger.error('APPLICATION ERROR', { meta: err })
 
         server.close((error) => {
             if (error) {
-                // eslint-disable-next-line no-console
-                console.error('Application Error', { meta: err })
+                logger.error('Application Error', { meta: err })
             }
 
             process.exit(1)

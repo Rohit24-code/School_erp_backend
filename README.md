@@ -56,3 +56,20 @@ npm i cross-env this helps to check if enviroment is production or testing and i
 
 this logger to used to store in file as well as logger
 and we can use it for logging in production without any issue
+
+Made a logger file in utils an then i have logger msg in my logs folder
+
+<!--npm i source-map-support   -->
+
+The source-map-support library provides better error stack traces by mapping the transpiled code (e.g., TypeScript, Babel output) back to the original source code. This can be especially helpful for debugging in Node.js.
+
+to find the line on which error is happening while my app is live in production bcs as i am using typescript it will give me line of error of build so using this it will give me as per my code line no.
+
+after installation go to tsconfig and enable "sourceMap": true,
+
+added this in looger and its complete now
+
+import \* as sourceMapSupport from 'source-map-support'
+
+//linking trace support
+sourceMapSupport.install()

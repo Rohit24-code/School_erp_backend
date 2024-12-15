@@ -3,6 +3,7 @@ import responseMessage from '../constant/responseMessage'
 import { ThttpsError } from '../types/types'
 import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
+import logger from './logger'
 
 export default (err: unknown, req: Request, errorStatusCode: number = 500): ThttpsError => {
     const errorObj: ThttpsError = {
@@ -24,15 +25,11 @@ export default (err: unknown, req: Request, errorStatusCode: number = 500): Thtt
         delete errorObj.trace
     }
 
-    // eslint-disable-next-line no-console
-    console.dir(
-        {
-            meta: {
-                errorObj
-            }
-        },
-        { depth: null }
-    )
+    logger.info('Error_Utils', {
+        meta: {
+            errorObj
+        }
+    })
 
     return errorObj
 }
