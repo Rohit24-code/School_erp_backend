@@ -4,7 +4,7 @@ import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
 import logger from './logger'
 
-export default (req: Request, _: Response, resStatusCode: number, resMessage: string, data?: unknown, count?: number) => {
+export default (req: Request, res: Response, resStatusCode: number, resMessage: string, data?: unknown, count?: number) => {
     const response: ThttpsResponse = {
         success: true,
         statusCode: resStatusCode,
@@ -29,5 +29,5 @@ export default (req: Request, _: Response, resStatusCode: number, resMessage: st
         delete response.request.ip
     }
 
-    return response
+   res.status(resStatusCode).json(response)
 }

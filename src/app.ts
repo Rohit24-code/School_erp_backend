@@ -4,15 +4,24 @@ import router from './router/apiRoutes'
 import globalErrorHandler from './middleware/globalErrorHandler'
 import responseMessage from './constant/responseMessage'
 import httpError from './util/httpError'
+import helmet from 'helmet'
+import cors from 'cors'
 
 const app: Application = express()
 
 //Middleware
+app.use(helmet())
+app.use(cors({
+    methods:['GET','POST','PUT','DELETE','OPTIONS','HEAD'],
+    // Frontend domin which is neccesary
+    origin:["https://client.com"],
+    // this is to allow ur app for cookies
+    credentials:true
+}))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../', 'public')))
 
 // Routes
-
 app.use('/api/v1', router)
 
 // 404 Error handler

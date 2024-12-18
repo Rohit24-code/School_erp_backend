@@ -88,3 +88,42 @@ colors: true
     added colors true in  utils and the just yourCOlor(message)
 
 <!-- DB -->
+npm i winston-mongodb
+
+const mongodbTransport = (): Array<MongoDBTransportInstance> => {
+    return [
+        new transports.MongoDB({
+            level:'info',
+            db: config.DATABASE_URL as string,
+            metaKey:"meta",
+            expireAfterSeconds:3600 * 24 * 30,
+            collection:'application-logs'
+        })
+    ]
+}
+
+this makes a collection in mongodb and save in db collection which will remove in 30 days 
+
+
+<!-- SKIPPED MIGRATION AS OF NOW  -->
+
+
+<!-- check fo app health  -->
+
+
+<!-- install npm i helmet  -->
+used to save from cross site scripting and content security policy and many others
+
+
+
+<!-- npm i cors  -->
+
+
+<!-- DEDOS ATTACK  when sometime try to call api many many time (RATE LIMITING)-->
+npm i rate-limiter-flexible
+
+
+
+<!-- npm check updates  -->
+it upgrades your package.json deps to the latest version ignoring specified versions
+

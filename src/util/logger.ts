@@ -1,11 +1,13 @@
 import { createLogger, transports, format } from 'winston'
 import { ConsoleTransportInstance, FileTransportInstance } from 'winston/lib/winston/transports'
 import util from 'util'
+import 'winston-mongodb'
 import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
 import path from 'path'
 import * as sourceMapSupport from 'source-map-support'
 import { blue, green, magenta, red, yellow } from 'colorette'
+import { MongoDBTransportInstance } from 'winston-mongodb'
 
 //linking trace support
 sourceMapSupport.install()
@@ -89,10 +91,25 @@ const fileTransport = (): Array<FileTransportInstance> => {
     ]
 }
 
+const mongodbTransport = (): Array<MongoDBTransportInstance> => {
+    return [
+        new transports.MongoDB({
+            level:'info',
+            db: config.DATABASE_URL as string,
+            metaKey:"meta",
+            expireAfterSeconds:3600 * 24 * 30,
+            collection:'application-logs',
+            options:{
+                useUnifiedTopology:true
+            }
+        })
+    ]
+}
+
 export default createLogger({
     defaultMeta: {
         meta: {}
     },
     //transport is something if you want at different places like file  , db, console
-    transports: [...fileTransport(), ...consoleTransport()]
+    transports: [...fileTransport(), ...consoleTransport(),...mongodbTransport()]
 })
