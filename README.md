@@ -127,3 +127,12 @@ npm i rate-limiter-flexible
 <!-- npm check updates  -->
 it upgrades your package.json deps to the latest version ignoring specified versions
 
+
+
+
+<!-- AUTHENTICATION  -->
+npm i jsonwebtoken bcrypt libphonenumber-js joi
+
+
+<!-- TIME ZONE -->
+npm i countries-and-timezones

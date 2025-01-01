@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 import config from '../config/config'
+import userModal from '../modal/userModal'
+import { UserResponseBodyType } from '../types/userTypes'
 
 export default {
     connect: async () => {
@@ -11,5 +13,13 @@ export default {
         } catch (error) {
             throw error
         }
+    },
+    findUserByEmailAddress:(emailAddress:string)=>{
+      return userModal.findOne({emailAddress})
+    },
+    registerUser:(payload:UserResponseBodyType)=>{
+        return userModal.create(payload)
     }
 }
+
+

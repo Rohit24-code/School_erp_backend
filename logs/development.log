@@ -1,0 +1,2409 @@
+{
+    "level": "ERROR",
+    "message": "APPLICATION ERROR",
+    "meta": {
+        "message": "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/",
+        "reason": {
+            "type": "ReplicaSetNoPrimary",
+            "servers": {
+                "erp-shard-00-00.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-00.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1120818560,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                },
+                "erp-shard-00-01.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-01.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1120818453,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                },
+                "erp-shard-00-02.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-02.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1120818522,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                }
+            },
+            "stale": false,
+            "compatible": true,
+            "heartbeatFrequencyMS": 10000,
+            "localThresholdMS": 15,
+            "setName": "atlas-7jprh2-shard-0",
+            "maxElectionId": null,
+            "maxSetVersion": null,
+            "commonWireVersion": 0,
+            "logicalSessionTimeoutMinutes": null
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "message": "APPLICATION ERROR",
+    "meta": {
+        "message": "Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/",
+        "reason": {
+            "type": "ReplicaSetNoPrimary",
+            "servers": {
+                "erp-shard-00-01.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-01.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1121065551,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                },
+                "erp-shard-00-02.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-02.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1121065755,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                },
+                "erp-shard-00-00.7xkmv.mongodb.net:27017": {
+                    "address": "erp-shard-00-00.7xkmv.mongodb.net:27017",
+                    "type": "Unknown",
+                    "hosts": [],
+                    "passives": [],
+                    "arbiters": [],
+                    "tags": {},
+                    "minWireVersion": 0,
+                    "maxWireVersion": 0,
+                    "roundTripTime": -1,
+                    "minRoundTripTime": 0,
+                    "lastUpdateTime": 1121065989,
+                    "lastWriteDate": 0,
+                    "error": {},
+                    "topologyVersion": null,
+                    "setName": null,
+                    "setVersion": null,
+                    "electionId": null,
+                    "logicalSessionTimeoutMinutes": null,
+                    "maxMessageSizeBytes": null,
+                    "maxWriteBatchSize": null,
+                    "maxBsonObjectSize": null,
+                    "primary": null,
+                    "me": null,
+                    "$clusterTime": null,
+                    "iscryptd": false
+                }
+            },
+            "stale": false,
+            "compatible": true,
+            "heartbeatFrequencyMS": 10000,
+            "localThresholdMS": 15,
+            "setName": "atlas-7jprh2-shard-0",
+            "maxElectionId": null,
+            "maxSetVersion": null,
+            "commonWireVersion": 0,
+            "logicalSessionTimeoutMinutes": null
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "57.55 second",
+                "memoryUsage": {
+                    "heapTotal": "187.09 MB",
+                    "heapUsed": "157.84 MB"
+                }
+            },
+            "timeStamp": 1734436702169
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "193.50 second",
+                "memoryUsage": {
+                    "heapTotal": "152.34 MB",
+                    "heapUsed": "147.81 MB"
+                }
+            },
+            "timeStamp": 1734436838119
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "224.96 second",
+                "memoryUsage": {
+                    "heapTotal": "153.84 MB",
+                    "heapUsed": "148.44 MB"
+                }
+            },
+            "timeStamp": 1734436869584
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "589.87 second",
+                "memoryUsage": {
+                    "heapTotal": "153.09 MB",
+                    "heapUsed": "148.70 MB"
+                }
+            },
+            "timeStamp": 1734437234494
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "89.07 second",
+                "memoryUsage": {
+                    "heapTotal": "152.09 MB",
+                    "heapUsed": "148.15 MB"
+                }
+            },
+            "timeStamp": 1734437423363
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "13.66 second",
+                "memoryUsage": {
+                    "heapTotal": "184.34 MB",
+                    "heapUsed": "159.96 MB"
+                }
+            },
+            "timeStamp": 1734437830741
+        },
+        "request": {
+            "ip": "::ffff:127.0.0.1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "8.78 second",
+                "memoryUsage": {
+                    "heapTotal": "185.09 MB",
+                    "heapUsed": "158.71 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4018.34 MB"
+            },
+            "timeStamp": 1734437932004
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "28.59 second",
+                "memoryUsage": {
+                    "heapTotal": "188.84 MB",
+                    "heapUsed": "158.71 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4409.64 MB"
+            },
+            "timeStamp": 1734440657466
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "29.76 second",
+                "memoryUsage": {
+                    "heapTotal": "188.84 MB",
+                    "heapUsed": "159.48 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4347.44 MB"
+            },
+            "timeStamp": 1734440658634
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "30.71 second",
+                "memoryUsage": {
+                    "heapTotal": "188.84 MB",
+                    "heapUsed": "160.09 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4349.05 MB"
+            },
+            "timeStamp": 1734440659581
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "31.60 second",
+                "memoryUsage": {
+                    "heapTotal": "188.84 MB",
+                    "heapUsed": "160.23 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4341.59 MB"
+            },
+            "timeStamp": 1734440660474
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "32.76 second",
+                "memoryUsage": {
+                    "heapTotal": "189.09 MB",
+                    "heapUsed": "160.73 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4343.16 MB"
+            },
+            "timeStamp": 1734440661632
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "32.96 second",
+                "memoryUsage": {
+                    "heapTotal": "189.34 MB",
+                    "heapUsed": "161.19 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4348.55 MB"
+            },
+            "timeStamp": 1734440661833
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "33.80 second",
+                "memoryUsage": {
+                    "heapTotal": "189.34 MB",
+                    "heapUsed": "161.41 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4346.77 MB"
+            },
+            "timeStamp": 1734440662673
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "34.65 second",
+                "memoryUsage": {
+                    "heapTotal": "189.34 MB",
+                    "heapUsed": "161.64 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4340.71 MB"
+            },
+            "timeStamp": 1734440663519
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "35.41 second",
+                "memoryUsage": {
+                    "heapTotal": "189.34 MB",
+                    "heapUsed": "161.86 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4350.57 MB"
+            },
+            "timeStamp": 1734440664283
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "36.21 second",
+                "memoryUsage": {
+                    "heapTotal": "189.59 MB",
+                    "heapUsed": "162.12 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4353.44 MB"
+            },
+            "timeStamp": 1734440665077
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 429,
+            "message": "Too many requests! please try again after some time",
+            "request": {
+                "ip": "::1",
+                "method": "GET",
+                "url": "/api/v1/health"
+            },
+            "data": null,
+            "trace": {
+                "err": "Error: Too many requests! please try again after some time\n    at C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\middleware\\rateLimit.ts:16:28\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 429,
+            "message": "Too many requests! please try again after some time",
+            "request": {
+                "ip": "::1",
+                "method": "GET",
+                "url": "/api/v1/health"
+            },
+            "data": null,
+            "trace": {
+                "err": "Error: Too many requests! please try again after some time\n    at C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\middleware\\rateLimit.ts:16:28\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 429,
+            "message": "Too many requests! please try again after some time",
+            "request": {
+                "ip": "::1",
+                "method": "GET",
+                "url": "/api/v1/health"
+            },
+            "data": null,
+            "trace": {
+                "err": "Error: Too many requests! please try again after some time\n    at C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\middleware\\rateLimit.ts:16:28\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 429,
+            "message": "Too many requests! please try again after some time",
+            "request": {
+                "ip": "::1",
+                "method": "GET",
+                "url": "/api/v1/health"
+            },
+            "data": null,
+            "trace": {
+                "err": "Error: Too many requests! please try again after some time\n    at C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\middleware\\rateLimit.ts:16:28\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "application": {
+                "enviroment": "development",
+                "uptime": "521.71 second",
+                "memoryUsage": {
+                    "heapTotal": "154.09 MB",
+                    "heapUsed": "149.69 MB"
+                }
+            },
+            "system": {
+                "cpuUsage": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalMemory": "14278.82 MB",
+                "freeMemory": "4221.62 MB"
+            },
+            "timeStamp": 1734441415575
+        },
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/api/v1/health"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 422,
+            "message": "\"name\" is not allowed to be empty",
+            "request": {
+                "ip": "::1",
+                "method": "POST",
+                "url": "/api/v1/register"
+            },
+            "data": null,
+            "trace": {
+                "err": "ValidationError: \"name\" is not allowed to be empty"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 422,
+            "message": "\"emailAddress\" is not allowed to be empty",
+            "request": {
+                "ip": "::1",
+                "method": "POST",
+                "url": "/api/v1/register"
+            },
+            "data": null,
+            "trace": {
+                "err": "ValidationError: \"emailAddress\" is not allowed to be empty"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 422,
+            "message": "\"phoneNumber\" is not allowed to be empty",
+            "request": {
+                "ip": "::1",
+                "method": "POST",
+                "url": "/api/v1/register"
+            },
+            "data": null,
+            "trace": {
+                "err": "ValidationError: \"phoneNumber\" is not allowed to be empty"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 422,
+            "message": "\"password\" is not allowed to be empty",
+            "request": {
+                "ip": "::1",
+                "method": "POST",
+                "url": "/api/v1/register"
+            },
+            "data": null,
+            "trace": {
+                "err": "ValidationError: \"password\" is not allowed to be empty"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "message": "Data has been fetched successfully !",
+        "data": [],
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/v1/register"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "message": "Data has been fetched successfully !",
+        "data": [],
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/v1/register"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "message": "Data has been fetched successfully !",
+        "data": [],
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/v1/register"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "message": "Data has been fetched successfully !",
+        "data": [],
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/v1/register"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "CONTROLLER_RESPONSE",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "message": "Data has been fetched successfully !",
+        "data": {
+            "_id": "67640a43f7b7824e785c565d"
+        },
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/v1/register"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "Error_Utils",
+    "meta": {
+        "errorObj": {
+            "success": false,
+            "statusCode": 422,
+            "message": "user is already exits with rohit@gmail.com!",
+            "request": {
+                "ip": "::1",
+                "method": "POST",
+                "url": "/api/v1/register"
+            },
+            "data": null,
+            "trace": {
+                "err": "Error: user is already exits with rohit@gmail.com!\n    at C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\controllers\\apiController.ts:67:36\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Rohit\\Downloads\\School_erp_backend-master\\School_erp_backend-master\\src\\controllers\\apiController.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+        }
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}
+{
+    "level": "INFO",
+    "message": "DATABASE_CONNECTION",
+    "meta": {
+        "CONNECTION_NAME": "school_db"
+    }
+}
+{
+    "level": "INFO",
+    "message": "RATE LIMITER RUNNING",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "message": "application started",
+    "meta": {
+        "PORT": "3400",
+        "SERVER": "http://localhost:3400"
+    }
+}

@@ -8,7 +8,7 @@ const router = Router()
 // router.use(rateLimit)
 
 router.route('/self').get(apiController.self)
-
+router.route('/register').post(apiController.register)
 router.route('/health').get(apiController.health)
 
 export default router
