@@ -14,12 +14,16 @@ export default {
             throw error
         }
     },
-    findUserByEmailAddress:(emailAddress:string)=>{
-      return userModal.findOne({emailAddress})
+    findUserByEmailAddress: (emailAddress: string) => {
+        return userModal.findOne({ emailAddress })
     },
-    registerUser:(payload:UserResponseBodyType)=>{
+    registerUser: (payload: UserResponseBodyType) => {
         return userModal.create(payload)
+    },
+    findUserByConfimationTokenAndCode: (token: string, code: string) => {
+        return userModal.findOne({
+            'accountConfirmation.token': token,
+            'accountConfirmation.code': code
+        })
     }
 }
-
-
