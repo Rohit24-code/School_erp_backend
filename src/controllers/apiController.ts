@@ -3,8 +3,8 @@ import httpResponse from '../util/httpResponse'
 import responseMessage from '../constant/responseMessage'
 import httpError from '../util/httpError'
 import quicker from '../util/quicker'
-import { RegisterRequestBodyType, UserResponseBodyType } from '../types/userTypes'
-import { validateJoiSchema, validateRegisterBody } from '../service/validationService'
+import { LoginRequestBodyType, RegisterRequestBodyType, UserResponseBodyType } from '../types/userTypes'
+import { validateJoiSchema, validateLoginBody, validateRegisterBody } from '../service/validationService'
 import dataBaseService from '../service/dataBaseService'
 import { userRole } from '../constant/userContant'
 import config from '../config/config'
@@ -19,6 +19,14 @@ dayjs.extend(utc)
 // The extends keyword means RegisterRequestBodyType is creating a new interface based on the existing Request interface, but with additional or overridden properties
 interface IRegisterRequestBodyType extends Request {
     body: RegisterRequestBodyType
+}
+
+interface IAuthenticateRequest extends Request {
+    authenticatedUser: UserResponseBodyType
+}
+
+interface ILoginRequestBodyType extends Request {
+    body: LoginRequestBodyType
 }
 
 interface IConfirmRequestBodyType extends Request {
@@ -180,9 +188,66 @@ const confirmation: RequestHandler = async (req: Request, res: Response, next: N
     }
 }
 
+
+const login:RequestHandler = async(req: Request, res: Response, next: NextFunction)=>{
+    try {
+        // TODO
+
+        // validate and parse body
+        const {body}=req as ILoginRequestBodyType
+
+        const {value,error}=validateJoiSchema<LoginRequestBodyType>(validateLoginBody,body)
+         
+        if (error) {
+            return httpError(next, error, req, 422)
+        }
+
+        const {emailAddress,password}=value
+        // find user
+        const user = await dataBaseService.findUserByEmailAddress(emailAddress,"+password")
+
+        if (!user) {
+            return httpError(next, new Error(responseMessage.NOT_FOUND("User")), req, 404)
+        }
+        // validate password
+         const isValidate= await quicker.comparePassword(password,user.password)
+         if(!isValidate){
+            return httpError(next,new Error(responseMessage.INVALID_USERNAME_OR_PASSWORD),req,400)
+         }
+        // access token 
+         const accessToken=quicker.generateToken({
+            userId:user.id},
+            config.ACCESS_TOKEN.ACCESS_TOKEN_SECRET as string,
+            config.ACCESS_TOKEN.EXPIRY
+         )
+
+        // last login information
+        user.lastLoginAt=dayjs().utc().toDate()
+        await user.save()
+
+        httpResponse(req, res, 200, responseMessage.SUCCESS, {
+            accessToken,
+            type:user.role
+        })
+    } catch (err) {
+        httpError(next, err, req, 500)
+    }
+}
+
+const selfIdentification: RequestHandler = (req: Request, res: Response, next: NextFunction) => {
+     const {authenticatedUser}=req as IAuthenticateRequest
+    try {
+        httpResponse(req, res, 200, responseMessage.SUCCESS, authenticatedUser)
+    } catch (err) {
+        httpError(next, err, req, 500)
+    }
+}
+
 export default {
     self,
     health,
     register,
-    confirmation
+    confirmation,
+    login,
+    selfIdentification
 }

@@ -8,7 +8,10 @@ export default {
         return `${entity} is already exits with ${identifier}!`
     },
     INVALID_ACCOUNT_CONFIRMATION_TOKEN_OR_CODE: `Invalid account confirmation token or code`,
+    INVALID_USERNAME_OR_PASSWORD:`Invalid username or password`,
     ACCOUNT_ALREADY_CONFIRMED: `Account already confirmed`,
     USER_AUTHENTICATION_SUCCESS: `User has been authenticated successfully`,
-    USER_REGISTERED_SUCCESS: `User has been registered successfully`
+    USER_REGISTERED_SUCCESS: `User has been registered successfully`,
+    USER_UNAUTHORIZED:`You are not authorized`,
+
 }

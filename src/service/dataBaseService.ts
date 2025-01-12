@@ -14,8 +14,11 @@ export default {
             throw error
         }
     },
-    findUserByEmailAddress: (emailAddress: string) => {
-        return userModal.findOne({ emailAddress })
+    findUserByEmailAddress: (emailAddress: string,select:string="") => {
+        return userModal.findOne({ emailAddress }).select(select)
+    },
+    findUserById: (userId:string) => {
+        return userModal.findById(userId)
     },
     registerUser: (payload: UserResponseBodyType) => {
         return userModal.create(payload)

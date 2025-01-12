@@ -8,6 +8,11 @@ export interface RegisterRequestBodyType{
     consent:boolean
 }
 
+export interface LoginRequestBodyType{
+    emailAddress:string,
+    password:string
+}
+
 export interface UserResponseBodyType{
     name:string
     emailAddress:string
