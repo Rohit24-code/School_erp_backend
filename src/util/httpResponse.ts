@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import { ThttpsResponse } from '../types/types'
 import config from '../config/config'
 import { EApplicationEnviroment } from '../constant/application'
-import logger from './logger'
+// import logger from './logger'
 
 export default (req: Request, res: Response, resStatusCode: number, resMessage: string, data?: unknown, count?: number) => {
     const response: ThttpsResponse = {
@@ -20,9 +20,9 @@ export default (req: Request, res: Response, resStatusCode: number, resMessage: 
 
     //LOG
 
-    logger.info('CONTROLLER_RESPONSE', {
-        meta: response
-    })
+    // logger.info('CONTROLLER_RESPONSE', {
+    //     meta: response
+    // })
 
     //Delete for production
     if (config.ENV === EApplicationEnviroment.PRODUCTION) {

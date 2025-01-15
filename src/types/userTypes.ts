@@ -5,7 +5,21 @@ export interface RegisterRequestBodyType{
     emailAddress:string,
     phoneNumber:string,
     password:string,
-    consent:boolean
+    consent:boolean,
+    address?:string
+    adharCard:string
+    city:string
+    area?:string
+    state?:string
+    contactPerson?:string
+    contactPersonEmail?:string
+    birthday?:string
+    anniversary?:string
+    bankAccountNo?:number | null
+    bankName?:string
+    ifscCode?:string
+    branch?:string
+    role:userRole
 }
 
 export interface LoginRequestBodyType{
@@ -13,7 +27,7 @@ export interface LoginRequestBodyType{
     password:string
 }
 
-export interface UserResponseBodyType{
+export interface UserResponseBodyType {
     name:string
     emailAddress:string
     phoneNumber:{
@@ -34,7 +48,20 @@ export interface UserResponseBodyType{
         token:string | null
         expiry:number |null
         lastResetAt:Date | null
-    }
+    },
+    address?:string
+    adharCard?:string
+    city?:string
+    area?:string
+    state?:string
+    contactPerson?:string
+    contactPersonEmail?:string
+    birthday?:string
+    anniversary?:string
+    bankAccountNo?:number | null
+    bankName?:string
+    ifscCode?:string
+    branch?:string
     lastLoginAt:Date|null
     consent:boolean
 }

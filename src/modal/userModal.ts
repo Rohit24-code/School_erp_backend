@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { UserResponseBodyType } from "../types/userTypes";
 import { userRole } from "../constant/userContant";
+import { Model } from "mongoose";
 
 const userSchema = new mongoose.Schema<UserResponseBodyType>({
    name:{
@@ -42,7 +43,7 @@ const userSchema = new mongoose.Schema<UserResponseBodyType>({
    },
    role:{
     type:String,
-    default:userRole.USER,
+    default:userRole.ADMIN,
     enum:userRole,
     required:true
    },
@@ -81,6 +82,48 @@ const userSchema = new mongoose.Schema<UserResponseBodyType>({
         default:null
     },
    },
+   address:{
+    type:String
+   },
+   adharCard:{
+    type:String,
+    maxlength:12,
+    minlength:12
+   },
+   city:{
+    type:String
+   },
+   area:{
+    type:String
+   },
+   state:{
+    type:String
+   },
+   contactPerson:{
+    type:String
+   },
+   contactPersonEmail:{
+    type:String
+   },
+   birthday:{
+    type:String
+   },
+   anniversary:{
+    type:String
+   },
+   bankAccountNo:{
+    type:Number,
+    default:null
+   },
+   bankName:{
+    type:String
+   },
+   ifscCode:{
+    type:String
+   },
+   branch:{
+    type:String
+   },
    lastLoginAt:{
     type:Date,
     default:null
@@ -91,4 +134,6 @@ const userSchema = new mongoose.Schema<UserResponseBodyType>({
    }
 },{timestamps:true})
 
-export default mongoose.model("user",userSchema)
+const userModal: Model<UserResponseBodyType> = mongoose.model('User', userSchema);
+
+export default userModal

@@ -13,5 +13,8 @@ export default {
     USER_AUTHENTICATION_SUCCESS: `User has been authenticated successfully`,
     USER_REGISTERED_SUCCESS: `User has been registered successfully`,
     USER_UNAUTHORIZED:`You are not authorized`,
+    DELETED_SUCCESSFULLY:`Data has been deleted successfully`,
+    UPDATED_SUCCESSFULLY:`Data has been updated successfully`,
+    UPLOADED_SUCCESSFULLY:`Data has been uploaded successfully`
 
 }

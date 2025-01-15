@@ -6,7 +6,21 @@ export const validateRegisterBody=joi.object<RegisterRequestBodyType>({
     emailAddress:joi.string().email().required(),
    phoneNumber:joi.string().min(4).max(20).required(),
    password:joi.string().min(8).max(24).required(),
-   consent:joi.boolean().valid(true).required()
+   consent:joi.boolean().valid(true).required(),
+   address:joi.string().optional(),
+   adharCard:joi.string().optional(),
+   city:joi.string().optional(),
+   area:joi.string().optional(),
+   state:joi.string().optional(),
+   contactPerson:joi.string().optional(),
+   contactPersonEmail:joi.string().optional(),
+   birthday:joi.string().optional(),
+   anniversary:joi.string().optional(),
+   bankAccountNo:joi.number().optional(),
+   bankName:joi.string().optional(),
+   ifscCode:joi.string().optional(),
+   branch:joi.string().optional(),
+   role:joi.string().optional(),
 })
 
 export const validateLoginBody=joi.object<LoginRequestBodyType>({

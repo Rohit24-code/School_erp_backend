@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.96",
     "bcrypt": "^5.1.1",
     "colorette": "^2.0.20",
     "cors": "^2.8.5",
