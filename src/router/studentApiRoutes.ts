@@ -8,7 +8,8 @@ const studentRouter = Router()
 studentRouter.route("/add-student").post(authenication,studentController.createStudent)
 studentRouter.route("/update-student/:id").patch(authenication,studentController.updateStudent)
 studentRouter.route("/get-students").get(authenication,studentController.getAllStudent)
-studentRouter.route("/delete-student/:id").get(authenication,studentController.deleteStudent)
+studentRouter.route("/get-student/:id").get(authenication,studentController.getSingleStudentDetail)
+studentRouter.route("/delete-student/:id").delete(authenication,studentController.deleteStudent)
 
 
 

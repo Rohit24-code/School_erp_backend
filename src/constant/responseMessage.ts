@@ -15,6 +15,6 @@ export default {
     USER_UNAUTHORIZED:`You are not authorized`,
     DELETED_SUCCESSFULLY:`Data has been deleted successfully`,
     UPDATED_SUCCESSFULLY:`Data has been updated successfully`,
-    UPLOADED_SUCCESSFULLY:`Data has been uploaded successfully`
+    UPLOADED_SUCCESSFULLY:`Data has been uploaded successfully`,
 
 }
