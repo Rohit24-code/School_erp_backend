@@ -1,3 +1,4 @@
+import { ObjectId } from "mongoose"
 import { userRole } from "../constant/userContant"
 
 export type RegisterStudentBodyType={
@@ -10,6 +11,7 @@ export type RegisterStudentBodyType={
  gender:string
  fatherName:string
  fatherMobile?:string
+ className:ObjectId,
  fatherEducationQualification?:string
  fatherOccupation?:string
  fatherDob?:string

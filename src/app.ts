@@ -8,6 +8,8 @@ import helmet from 'helmet'
 import cors from 'cors'
 import studentRouter from './router/studentApiRoutes'
 import { sectionRouter } from './router/sectionsApiRoutes'
+import { feesHeadRouter } from './router/feesHeadApiRoutes'
+import { accountRouter } from './router/accountApiRoutes'
 
 const app: Application = express()
 
@@ -27,6 +29,8 @@ app.use(express.static(path.join(__dirname, '../', 'public')))
 app.use('/api/v1', router)
 app.use('/api/v1/student', studentRouter)
 app.use('/api/v1/section', sectionRouter)
+app.use('./api/v1/fees-head',feesHeadRouter)
+app.use('./api/v1/account',accountRouter)
 
 // 404 Error handler
 app.use((req: Request, _: Response, next: NextFunction) => {

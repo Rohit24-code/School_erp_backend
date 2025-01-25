@@ -2,6 +2,7 @@ import mongoose from 'mongoose'
 import { RegisterStudentBodyType } from '../types/studentTypes'
 import { userRole } from '../constant/userContant'
 
+
 const studentSchema = new mongoose.Schema<RegisterStudentBodyType>(
     {
         name: {
@@ -31,6 +32,11 @@ const studentSchema = new mongoose.Schema<RegisterStudentBodyType>(
         gender: {
             type: String,
             required: true
+        },
+        className:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "section", 
+            required:true,
         },
         fatherName: {
             type: String,
